@@ -271,6 +271,22 @@ class App extends React.Component {
             </a>
             <img className='navbar-center header logo' src="styles/girl-logo.png"></img>
           </header>
+          <Dialog
+              title="1 Year Ago Today..."
+              modal={false}
+              open={this.state.impressThrowBack}
+              actions= {
+                <FlatButton
+                  label="Close"
+                  primary={true}
+                  onTouchTap={this.handleClose}
+                />
+              }
+            >
+              <ThrowBackImpression
+                allEntries={this.state.throwBackEntries}
+                />
+            </Dialog>
           <div  className="col-md-2 search">
             <SortEntries
               handleSortByAlbum={this.toggleSortAlbum}
@@ -291,6 +307,8 @@ class App extends React.Component {
                 updateUserEntries={this.updateUserEntries}
                 getUserEntries={this.getUserEntries}
                 deleteUserEntries={this.deleteUserEntries}
+                playSong={this.playSong.bind(this)}
+                song={this.state.song}
               />
             </table>
             </div>
