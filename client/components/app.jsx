@@ -269,7 +269,7 @@ class App extends React.Component {
             <a href="/signout" className='navbar-right signout'>
               <button className="btn btn-default landing"><span>Sign Out</span></button>
             </a>
-            <img className='navbar-center header logo' src="styles/logo.svg"></img>
+            <img className='navbar-center header logo' src="styles/girl-logo.png"></img>
           </header>
           <div  className="col-md-2 search">
             <SortEntries
