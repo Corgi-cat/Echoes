@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
   </head>
-  <body>
+  <body color>
   <div class="landing container">
     <div class="container-fluid">
         <div class="col-md-3"></div>
@@ -23,8 +23,8 @@
         </div>
         <div class="col-md-3"></div>
     </div>
-    <div class='container-fluid' style="background:pink;margin-top: 150px;border-radius:20px">
-      <h2> Revolutionary music journal for the ages!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+    <div class='container-fluid' style="background:pink;margin-top: 150px;border-radius:20px; text-align: center">
+      <h2> Revolutionary music journal for the ages!</h2>
       <p>Do you want a journal</p>
       <p>A journal for music</p>
       <p>Then echoes will rock your world</p>
@@ -35,29 +35,19 @@
       <p>If you don't remember them thats fine!</p>
       <p>You can play snippets of the songs write from the app</p>
     </div>
-    <div class='container-fluid' style="background:teal;margin-top:150px;border-radius:20px"'>
-      <h1>Created by students of Hack Reactor, Modified by students of Hack Reactor, For getting a rockin Job; just like this app</h1>
+    <!-- <div class='container-fluid' style="background:teal;margin-top:150px;border-radius:20px"'>
+      <h1>Created by students of Hack Reactor, Modified by students of Hack Reactor,</h1>
       <p>Technologies include:</p>
-      <p>React          Right back REACT ya!</p>
-      <p>Node/Express   all aboard for the NODE EXPRESS</p>
+      <p>React</p>
+      <p>Node/Express</p>
       <p>Postgresql     you know for databases</p>
       <p>Material-Ui    buttons are imMETERIAL</p>
-    </div>
-    <div  class='container-fluid' style="background:pink;margin-top: 150px;border-radius:20px"'>
-      <h1>Our almamater -- <a href='http://www.hackreactor.com/onsite-immersive>Hack Reactor'>Hack Reactor</a></h1>
-        <ul>Basically
-          <li>You work wro 11hrs a day for 3 months</li>
-          <li>You learn all about javascript and it libraries</li>
-          <li>Everything from d3.js and backbone to angular and react</li>
-          <li>Then the last month you are told, do something cool, good luck</li>
-          <li>Then you have to take a project made by other first timers and put lipstick on that pig </li>
-          <li>Finally now that you are vastly more experienced you are given free reign for 3 weeks on a final project</li>
-        </ul>
-        <h2>This is the pig with lipstick</h2>
+    </div> -->
+    <div  class='container-fluid' style="background: #add8e6 ;margin-top: 150px;border-radius:20px; text-align: center"'>
+      <h1><a href='http://www.hackreactor.com/onsite-immersive>Hack Reactor'>Hack Reactor</a></h1>
+        <h2>Advanced Software Engineering Immersive Program</h2>
     </div>
     <div class='container-fluid' style="margin-top: 50px"'>
-    <p style="color:white">If you like this</p>
-    <button class="btn btn-default landing" onclick="alternate()"><span>Hire Me!</span></button>!
     </div>
       <img id="bg1 i1" src="styles/musical-notes.png" alt="cloud" height='50px' width='50px' style='position:absolute;top: 85px;left: 200px;' data-type='parallax' data-depth='-.60'/>
       <img id="bg1 i2" src="styles/musical-notes.png" alt="cloud" height='50px' width='50px' style='position:absolute;top: 410px;left: 795px;' data-type='parallax' data-depth='-.60'/>
@@ -72,10 +62,10 @@
   </div>
 
   <a href="http://www.github.com/corgi-cat/echoes"><img src="/styles/github-octocat.png" class="github-octocat"></a>
-  
+
   <footer class="navbar-fixed-bottom landing">
     <p class="author-credit">Created with love by Christian Arredondo, Tyler Holzer, Megan Rabuse, and Daniel Ricaud for HRATX25</p><br/>
-    <p class="author-credit">Improved with much remorse by Doris (Sun Tzu), Rudolpho the Red Nose Rodriguez, Trace Baxter (Fliko), and Guillermo the Cuban Blanco for HRATX26</p>
+    <p class="author-credit">Extended with love by Doris Chiu, Rudolpho Rodriguez, Trace Baxter, and Guillermo Blanco for HRATX26</p>
   </footer>
 
   <script>
@@ -96,15 +86,7 @@
       }
     });
     var backgroundColor = true;
-    var alternate = function() {
-      backgroundColor = !backgroundColor;
-      if(!backgroundColor) {
-        document.body.style.background = 'url(styles/headshot.jpg)'  
-      }else {
-        document.body.style.background = '#000022'  
-      }
-      
-    }
+    document.body.style.background = '#000022'
   </script>
   </body>
 </html>

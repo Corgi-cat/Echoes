@@ -26,8 +26,8 @@ export default class AlbumSelect extends Component {
         justifyContent: 'space-around',
       },
       gridList: {
-        width: 500,
-        height: 450,
+        width: '350px',
+        height: '350px',
         overflowY: 'auto',
       },
     };
@@ -45,8 +45,6 @@ export default class AlbumSelect extends Component {
              />
             <GridList
               cols={2}
-              cellHeight={200}
-              padding={1}
               style={styles.gridList}
             >
               {
@@ -61,8 +59,9 @@ export default class AlbumSelect extends Component {
                   titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
                   cols={2}
                   rows={2}
+                  style={{height:'350px', width:'350px'}}
                 >
-                  <img src={album.albumArtUrl} style={{width: 'auto'}}/>
+                  <img src={album.albumArtUrl} style={{height:'350px', width:'350px'}}/>
 
                 </GridTile>
 
