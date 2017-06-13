@@ -44,7 +44,7 @@ class ThrowBackImpressionEntry extends React.Component {
           title={this.props.title}
           subtitle={this.props.title}
           actionIcon={<ContentFilter />}
-          style={{height:'250px'}}
+          style={{height:'250px', width:'250px'}}
           onTouchTap={this.handleTileClick}
           >
             <img src={this.props.art_url100} style={{ width: '250px', height: '250px'}} />
